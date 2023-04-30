@@ -1,0 +1,48 @@
+<div
+    class="container xxs:flex xs:flex sm:flex lg:hidden xl:hidden 2xl:hidden mx-auto h-screen flex justify-center items-center xxs:p-3 xs:p-3 sm:p-3 md:p-3 p-0">
+    <div class="w-100 text-center">
+        <h1 class="text-white text-5xl xxs:text-3xl xs:text-3xl sm:text-3xl font-bold">Hi, I'm Christopher Robin</h1>
+        <p class="py-1 text-white text-xl" id="titleElement1" #titleElement></p>
+    </div>
+</div>
+
+<div id="particles-js" class="container xxs:hidden xs:hidden sm:hiddem lg:flex xl:flex 2xl:flex mx-auto h-screen flex flex-col justify-center items-center xxs:p-3 xs:p-3 sm:p-3 md:p-3 p-0">
+    
+    <div class="w-100 text-left">
+        <h1 class="text-white text-5xl font-bold">Hi, I'm Christopher Robin</h1>
+        <p class="py-1 text-2xl text-white" id="titleElement2" #titleElement>r</p>
+    </div>
+
+    <div class="grid grid-cols-12 gap-5 py-8">
+        <div class="col-span-6">
+            <button
+                class="bg-transparent hover:bg-cyan-500 text-cyan-300 text-lg font-semibold hover:text-white py-4 px-10 border border-cyan-500 hover:border-transparent rounded transition ease-in-out delay-100">
+                Get Started
+            </button>
+        </div>
+        <div class="col-span-6">
+            <button
+                class="bg-cyan-600 hover:bg-cyan-700 text-white text-lg font-semibold hover:text-white py-4 px-10 border border-cyan-600 hover:border-transparent rounded transition ease-in-out delay-100">
+                Contact Me
+            </button>
+        </div>
+    </div>
+
+    <div class="grid grid-cols-12 gap-3 py-8">
+        <div class="col-span-4">
+            <a href="https://www.facebook.com/BloodStrike711" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="facebook"><path fill="#838584" d="M13.355 22v-9.123h3.062l.459-3.555h-3.52v-2.27c0-1.03.285-1.731 1.761-1.731L17 5.32V2.14A25.233 25.233 0 0 0 14.257 2c-2.715 0-4.573 1.657-4.573 4.7v2.622h-3.07v3.555h3.07V22h3.671Z" data-name="Brand Logos"></path></svg></a>
+        </div>
+        <div class="col-span-4">
+            <a href="https://github.com/chrischase011" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="github"><path fill="#838584" d="M7.999 0C3.582 0 0 3.596 0 8.032a8.031 8.031 0 0 0 5.472 7.621c.4.074.546-.174.546-.387 0-.191-.007-.696-.011-1.366-2.225.485-2.695-1.077-2.695-1.077-.363-.928-.888-1.175-.888-1.175-.727-.498.054-.488.054-.488.803.057 1.225.828 1.225.828.714 1.227 1.873.873 2.329.667.072-.519.279-.873.508-1.074-1.776-.203-3.644-.892-3.644-3.969 0-.877.312-1.594.824-2.156-.083-.203-.357-1.02.078-2.125 0 0 .672-.216 2.2.823a7.633 7.633 0 0 1 2.003-.27 7.65 7.65 0 0 1 2.003.271c1.527-1.039 2.198-.823 2.198-.823.436 1.106.162 1.922.08 2.125.513.562.822 1.279.822 2.156 0 3.085-1.87 3.764-3.652 3.963.287.248.543.738.543 1.487 0 1.074-.01 1.94-.01 2.203 0 .215.144.465.55.386A8.032 8.032 0 0 0 16 8.032C16 3.596 12.418 0 7.999 0z"></path></svg></a>
+        </div>
+        <div class="col-span-4 mx-1">
+            <a href="https://www.linkedin.com/in/christopher-robin-chase-34b97a1b2/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="linkedin"><g fill="#838584"><path d="M0 5h3.578v11H0zM13.324 5.129c-.038-.012-.074-.025-.114-.036a2.32 2.32 0 0 0-.145-.028A3.207 3.207 0 0 0 12.423 5c-2.086 0-3.409 1.517-3.845 2.103V5H5v11h3.578v-6s2.704-3.766 3.845-1v7H16V8.577a3.568 3.568 0 0 0-2.676-3.448z"></path><circle cx="1.75" cy="1.75" r="1.75"></circle></g></svg></a>
+        </div>
+    </div>
+</div>
+<ng-particles
+    [id]="id"
+    [options]="particlesOptions"
+    [particlesInit]="particlesInit"
+    (particlesLoaded)="particlesLoaded($event)"
+></ng-particles>
