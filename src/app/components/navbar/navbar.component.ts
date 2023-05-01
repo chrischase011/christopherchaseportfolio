@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, ActivatedRoute } from '@angular/router';
+import { Router, ActivatedRoute, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -16,14 +16,16 @@ export class NavbarComponent implements OnInit {
   currentUrl: string | undefined = undefined;
 
   ngOnInit() {
-    this.router.events.subscribe(() => {
-      this.currentUrl = this.router.url;
+    this.router.events.subscribe((event) => {
+      if (event instanceof NavigationEnd) {
+        this.currentUrl = event.url;
+      }
     });
-
   }
+
   isCurrentUrl(pattern: string): boolean {
-    // console.log(this.currentUrl)
-    return !!this.currentUrl && this.currentUrl.includes(pattern);
+    // console.log(!!this.currentUrl && this.currentUrl.includes(pattern))
+    return this.currentUrl == pattern;
   }
 
 

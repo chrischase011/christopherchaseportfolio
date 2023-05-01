@@ -39,11 +39,11 @@
                 <div class="justify-center hidden sm:ml-6 sm:block">
                     <div class="flex space-x-4">
                         <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                        <a href="/" class="px-3 py-2 text-sm font-medium text-white  rounded-md"
-                            aria-current="page" [ngClass]="isCurrentUrl('/') ? 'bg-gray-900' : ''">Home</a>
+                        <a href="" class="px-3 py-2 text-sm font-medium text-white  rounded-md"
+                            aria-current="page" [ngClass]="{'bg-gray-900': isCurrentUrl('/')}">Home</a>
 
-                        <a href="/about"
-                            class="px-3 py-2 text-sm font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white"  [ngClass]="isCurrentUrl('about') ? 'bg-gray-900' : ''">
+                        <a href="about"
+                            class="px-3 py-2 text-sm font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white"  [ngClass]="{'bg-gray-900': isCurrentUrl('/about')}">
                             About
                         </a>
 
