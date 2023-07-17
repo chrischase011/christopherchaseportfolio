@@ -21,7 +21,10 @@ export class HeroComponent implements OnInit {
       "I'm a Web Developer",
       "I'm a Programmer",
       "I love programming!!!",
-      "I'll make a quality software for your business."
+      "I'll make a quality software for your business.",
+      "Need a system for your business or personal project?",
+      "My tech stack: PHP, C#, Python, Laravel, Java, JS",
+      "Services offered: Web Application, Mobile Web Application, <br> Desktop Application."
     ]
 
   }
@@ -59,10 +62,7 @@ export class HeroComponent implements OnInit {
 
   id = "tsparticles";
 
-    /* Starting from 1.19.0 you can use a remote url (AJAX request) to a JSON with the configuration */
-    particlesUrl = "http://foo.bar/particles.json";
 
-    /* or the classic JavaScript object */
     particlesOptions = {
         fpsLimit: 120,
         interactivity: {

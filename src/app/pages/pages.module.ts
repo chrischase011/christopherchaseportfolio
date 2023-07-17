@@ -6,12 +6,16 @@ import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 import { HeroComponent } from '../components/hero/hero.component';
 import { NgParticlesModule } from "ng-particles";
+import { ProjectsComponent } from './projects/projects.component';
+import { AboutDescriptionComponent } from '../components/about-description/about-description.component';
 
 @NgModule({
   declarations: [
     AboutComponent,
     HomeComponent,
-    HeroComponent
+    HeroComponent,
+    ProjectsComponent,
+    AboutDescriptionComponent
   ],
   imports: [
     CommonModule,

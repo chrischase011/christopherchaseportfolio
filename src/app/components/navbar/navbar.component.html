@@ -9,7 +9,7 @@
                     <span class="sr-only">Open main menu</span>
                     <!--
               Icon when menu is closed.
-  
+
               Menu open: "hidden", Menu closed: "block"
             -->
                     <svg class="block w-6 h-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
@@ -19,7 +19,7 @@
                     </svg>
                     <!--
               Icon when menu is open.
-  
+
               Menu open: "block", Menu closed: "hidden"
             -->
                     <svg class="hidden w-6 h-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
@@ -39,16 +39,16 @@
                 <div class="justify-center hidden sm:ml-6 sm:block">
                     <div class="flex space-x-4">
                         <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                        <a href="" class="px-3 py-2 text-sm font-medium text-white  rounded-md"
+                        <a routerLink="" class="px-3 py-2 text-sm font-medium text-white  rounded-md"
                             aria-current="page" [ngClass]="{'bg-gray-900': isCurrentUrl('/')}">Home</a>
 
-                        <a href="about"
+                        <a routerLink="about"
                             class="px-3 py-2 text-sm font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white"  [ngClass]="{'bg-gray-900': isCurrentUrl('/about')}">
                             About
                         </a>
 
-                        <a href="#"
-                            class="px-3 py-2 text-sm font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white">
+                        <a routerLink="projects"
+                            class="px-3 py-2 text-sm font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white"[ngClass]="{'bg-gray-900': isCurrentUrl('/projects')}">
                             Projects
                         </a>
                     </div>
@@ -61,15 +61,15 @@
     <div class="sm:hidden" [ngClass]="{'hidden transition-all': menuState == false}" id="mobile-menu">
         <div class="px-2 pt-2 pb-3 space-y-1">
             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-            <a href="/" class="block px-3 py-2 text-base font-medium text-white bg-gray-900 rounded-md"
+            <a routerLink="" class="block px-3 py-2 text-base font-medium text-white bg-gray-900 rounded-md"
                 aria-current="page">Home</a>
 
-            <a href="/about"
+            <a routerLink="about"
                 class="block px-3 py-2 text-base font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white">
                 About
             </a>
 
-            <a href="#"
+            <a routerLink="projects"
                 class="block px-3 py-2 text-base font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white">
                 Projects
             </a>
